@@ -18,7 +18,7 @@ const AdditionInformation = (props) => {
     const phoneNumber = formData.phoneNumber;
     const bonusCode = formData.bonusCode;
 
-    if(address1 == '' || address2 == '' || city == '', country == '', postalCode == '', phoneNumber == '', bonusCode == '') {
+    if(address1 == '' || address2 == '' || city == '', country == '', postalCode == '', phoneNumber == '') {
       return alert('All fields are required');
     }
 

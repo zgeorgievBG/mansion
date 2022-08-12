@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import * as authService from "../services/authService";
+import UserCard from './UserCard';
 
 
 
@@ -13,22 +14,11 @@ const Users = () => {
         })()
     }, [])
 
-
-
-    return (
-      <ul
-        style={{
-          backgroundColor: "#140c27",
-          borderRadius: "20px",
-          width: "150px",
-          padding: "10px",
-          margin: '10px'
-        }}>
-        {users.map((user) => (
-          <li style={{color: "white", fontSize: "20px", marginLeft: '5px'}}>{user.email}</li>
-        ))}
-      </ul>
-    );
+    return(
+      <div className="cardContainer">
+        {users.map(user => <UserCard user={user}/>)}
+      </div>
+    )
 
 }
 

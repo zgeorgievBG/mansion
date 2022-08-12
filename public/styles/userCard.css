@@ -1,0 +1,30 @@
+.profile {
+  border: 3px solid white;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 11.7%;
+  width: 11.4%;
+  vertical-align: top;
+  margin-top: 15px;
+  background-color: gray;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cardContainer {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 50px;
+}
+
+.infoContainer {
+    padding-left: 10px;
+    font-weight: bold;
+}
